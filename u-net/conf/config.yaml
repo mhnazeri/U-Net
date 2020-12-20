@@ -1,0 +1,45 @@
+# Training Parameters
+train_params:
+  epochs: 50
+  n_gpu: 0 # number of GPUs
+  optimizer: "adam"
+  save_every: 10
+
+# Dataloader Parameters
+dataloader_params:
+  dataset: "carla" #  valid values are "carla" or "cityscapes"
+  carla_root: "data/carla"
+  cityscapes_root: "data/cityscapes"
+  n_classes: 13
+  img_size:
+    h: 256
+    w: 256
+  num_workers: 2
+  batch_size: 64
+
+# directories
+directory:
+  save: "checkpoint"
+  load: "checkpoint/best.pt"
+  log: "logs"
+
+# UNet parameters
+unet:
+  in_features: 3
+  out_features: 13
+
+adam:
+  lr: 0.001
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1e-8
+  weight_decay: 0
+  amsgrad: False
+
+rmsprop:
+  lr: 1e-3
+  momentum: 0
+  alpha: 0.99
+  eps: 1e-8
+  centered: True
+  weight_decay: 0

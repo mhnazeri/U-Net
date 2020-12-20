@@ -1,0 +1,32 @@
+wandb_version: 1
+
+_content:
+  desc: null
+  value:
+    adam: '{''lr'': 0.01, ''beta1'': 0.9, ''beta2'': 0.999, ''eps'': 1e-08, ''weight_decay'':
+      0, ''amsgrad'': False}'
+    dataloader_params: '{''root_dir'': ''data'', ''n_classes'': 13, ''img_size'':
+      {''h'': 256, ''w'': 256}, ''num_workers'': 2, ''batch_size'': 64}'
+    directory: '{''save'': ''checkpoint'', ''load'': ''checkpoint/best.pt'', ''log'':
+      ''logs''}'
+    rmsprop: '{''lr'': 0.01, ''momentum'': 0, ''alpha'': 0.99, ''eps'': 1e-08, ''centered'':
+      True, ''weight_decay'': 0}'
+    train_params: '{''epochs'': 1, ''n_gpu'': 0, ''optimizer'': ''adam'', ''save_every'':
+      10}'
+    unet: '{''in_features'': 3, ''out_features'': 13}'
+_metadata:
+  desc: null
+  value: ContainerMetadata(ref_type=<class 'dict'>, object_type=None, optional=True,
+    key=None, flags={}, resolver_cache=defaultdict(<class 'dict'>, {}), key_type=None,
+    element_type=None)
+_parent:
+  desc: null
+  value: null
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.12
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.6
