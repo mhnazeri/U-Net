@@ -1,6 +1,14 @@
-#U-Net
-
+# U-Net
 PyTorch implementation of U-Net.
+
+<p align="center">
+  <img src="UNet.svg"  height="300" width="600"/>
+</p>
+
+
+<p align="center">
+  <img src="unet_results.svg"  height="400" width="600"/>
+</p>
 
 ### Dependencies
 You can install the project dependencies by running:
