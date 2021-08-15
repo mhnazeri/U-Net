@@ -15,10 +15,12 @@ You can install the project dependencies by running:
 ```bash
 pip install -r requirements
 ```
-For logging we used [wandb](https://wandb.ai), you need to create an account to log the metrics and model output.
-Alternatively you can use matplotlib to plot model outputs.
 
-[Cityscapes](https://www.cityscapes-dataset.com/) and [Carla segmentation challenge](https://www.kaggle.com/kumaresanmanickavelu/lyft-udacity-challenge) have been used as datasets (Currently cityscapes is not implemented). The dataset files are resides in `data` folder and its structure is as follows:
+[Wandb](https://wandb.ai) is used for logging, you need to create an account to log the metrics and the model output.
+Alternatively you can use matplotlib to plot the model outputs.
+
+[Carla segmentation dataset](https://www.kaggle.com/kumaresanmanickavelu/lyft-udacity-challenge) has been used for training and testing. The dataset files are resides in `data` folder and its structure is as follows:
+
 ```bash
 ├──  carla
 │  ├──  dataA
